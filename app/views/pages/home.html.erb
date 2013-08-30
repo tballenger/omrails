@@ -1,24 +1,24 @@
-<div class="hero-unit">
-<h1>Welcome to my test App!</h1>
-<p class="lead">This is the subline for the value prop</p>
+<% if user_signed_in? %>
+	<div class="hero-unit">
+	<h1>Welcome member</h1>
+	<p class="lead">This is the subline for the value prop</p>
 
-<p><input type="email" placeholder="Enter email">
-<br/>
-<%= link_to "Sign up now", '#', class: "btn btn-large btn-primary" %>
-</p>
+<% else %>
 
-<p>
-	here is some sweet content 
+		<div class="hero-unit">
+		<h1>Welcome to my test App!</h1>
+		<p class="lead">This is the subline for the value prop</p>
 
-	<%= link_to "taylorballenger", "http://www.taylorballenger.com" %>	
-</p>
-</div>
+		<p><input type="email" placeholder="Enter email">
+		<br/>
+		<%= link_to "Sign up now", new_user_registration_path, class: "btn btn-large btn-primary" %>
+		</p>
 
-<div class="row">
-	<div class="span4"></div>
-	<div class="span8"></div>
-</div>
+		<p>
+			here is some sweet content 
 
+			<%= link_to "taylorballenger", "http://www.taylorballenger.com" %>	
+		</p>
+		</div>
 
-<div class = "span3">
-</div>
+<% end %>
