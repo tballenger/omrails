@@ -5,7 +5,8 @@ gem 'rails', '4.0.0'
 
 #use pg 
 group :production do
-	gem 'pg'	
+	gem 'pg'
+	gem 'bootstrap-sass', '~> 2.3.2.2'	
 end
 
 # Use sqlite3 as the database for Active Record
@@ -14,7 +15,7 @@ group :development, :test do
 end
 
 #bootstrap
-gem 'bootstrap-sass', '~> 2.3.2.2'
+
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
