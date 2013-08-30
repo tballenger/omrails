@@ -34,7 +34,10 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 
 #Devise user managements
-gem 'devise'
+gem 'devise', '~> 3.0.1'
+
+#simple form
+gem 'simple_form'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
